@@ -6,9 +6,12 @@
 - [ ] Future: kaggle with NLP dataset
 
 # leecode-notes
+**Understand the problem first!!!**
 
 1. Two Sum(1)
 - **enumerate** to gain index and elements at the same time
 - Unlike R, **remove, del, pop** will remove elements of the original list, so avoid using them when you do not want to change the original list
 
 2. Valid Parentheses(20)
+- **bool(1)** output TRUE and **bool("")** output FALSE
+- 
