@@ -10,6 +10,7 @@
 - [ ] Big Data techniques, hadoop/spark
 - [ ] Future: more kaggle projects(with NLP dataset)
 - [ ] Future: Hadoop and Spark
+- [ ] Future: build up my github
 
 # leecode-notes
 **Understand the problem first!!!**
