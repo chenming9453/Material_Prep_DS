@@ -12,7 +12,7 @@
 - [ ] Future: Hadoop and Spark
 - [ ] Future: build up my github
 
-# leecode-notes
+# Leetcode-notes
 **Understand the problem first!!!**
 
 1. Two Sum(1)
@@ -31,8 +31,6 @@
 
 5. 733
 
-
- 
  # A/B test
  
  1. When not to use A/B test: if the change is too large, if control/test group cannot be decided only by the change. if the testing time is too long/cost is too high/. if something is missing.
