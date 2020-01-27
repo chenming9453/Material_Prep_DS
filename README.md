@@ -89,11 +89,12 @@
  - **IS NULL** allows you to select rows that contain no data in a given column.
  - **AND** allows you to select only rows that satisfy two conditions.
  - **OR** allows you to select rows that satisfy either of two conditions. 
- 
+  - **NOT** allows you to select rows that do not match a certain condition.
+
  ex: **WHERE** year_rank **IN** (1, 2, 3)
+ 
  ex: **AND** ("group" **ILIKE** '%macklemore%' **OR** "group" **ILIKE** '%timberlake%')
 
- - **NOT** allows you to select rows that do not match a certain condition.
 
 # github tutorial
 - [link](https://www.linkedin.com/learning/learning-git-and-github/working-with-the-staging-environment)
