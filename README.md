@@ -120,25 +120,18 @@
  
  ```
  **SELECT** year,month,MAX(high) **AS** month_high
- 
-  **FROM** tutorial.aapl_historical_stock_price
-  
-  **GROUP BY** year, month
-  
-  **HAVING** MAX(high) > 400
-  
-  **ORDER BY** year, month
+ **FROM** tutorial.aapl_historical_stock_price
+ **GROUP BY** year, month
+ **HAVING** MAX(high) > 400
+ **ORDER BY** year, month
  ```
  
   ex:(pay attention to the "," at the end of **SELECT** line)
   
   ```
   **SELECT** player_name,year,
-  
         **CASE WHEN** year = 'SR'  **THEN ** 'yes'
-        
              **ELSE ** 'no'  **END AS** is_a_senior
-             
    **FROM** benn.college_football_players
   ```
    
@@ -146,19 +139,12 @@
    
    ```
    **SELECT CASE WHEN** year = 'FR' **THEN** 'FR'
-   
             **WHEN** year = 'SO' **THEN** 'SO'
-            
             **WHEN** year = 'JR' **THEN** 'JR'
-            
             **WHEN** year = 'SR' **THEN** 'SR'
-            
             **ELSE** 'No Year Data' **END AS** year_group,
-            
             **COUNT(1) AS** count
-            
    **FROM** benn.college_football_players
-   
    **GROUP BY** 1 
   ```
  
