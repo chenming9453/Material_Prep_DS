@@ -93,11 +93,11 @@
 
  ex: 
  
- ```**WHERE** year_rank **IN** (1, 2, 3)```
+ **WHERE** year_rank **IN** (1, 2, 3)
  
  ex:(pay attention to ' ' and " ")
  
- ```**AND** ("group" **ILIKE** '%macklemore%' **OR** "group" **ILIKE** '%timberlake%') ```
+ **AND** ("group" **ILIKE** '%macklemore%' **OR** "group" **ILIKE** '%timberlake%')
 
 3. Aggregate: 
  - **COUNT** counts how many rows are in a particular column that is NOT NULL
@@ -125,22 +125,22 @@
  
   ex:(pay attention to the "," at the end of **SELECT** line)
   
-  ```**SELECT** player_name,year,
+  **SELECT** player_name,year,
         **CASE WHEN** year = 'SR'  **THEN ** 'yes'
              **ELSE ** 'no'  **END AS** is_a_senior
    **FROM** benn.college_football_players
-   ```
+  
    
    ex:(pay attention to the **1** here, **1** actually refer to year_group, so we can use **GROUP BY** year_group. But we cannot use COUNT(year_group), because by that time year_group do not exist)
- ```  **SELECT CASE WHEN** year = 'FR' **THEN** 'FR'
+   **SELECT CASE WHEN** year = 'FR' **THEN** 'FR'
             **WHEN** year = 'SO' **THEN** 'SO'
             **WHEN** year = 'JR' **THEN** 'JR'
             **WHEN** year = 'SR' **THEN** 'SR'
             **ELSE** 'No Year Data' **END AS** year_group,
             **COUNT(1) AS** count
-  **FROM** benn.college_football_players
-  **GROUP BY** 1 
-  ```
+   **FROM** benn.college_football_players
+   **GROUP BY** 1 
+  
  
  4. 
 
