@@ -105,6 +105,8 @@
  - **MIN** and **MAX** return the lowest and highest values in a particular column, respectively.
  - **AVG** calculates the average of a group of selected values.
  - **GROUP BY** 
+ - **HAVING** 
+ - **ORDER BY** 
  - **DISTINCT var** select distinct values
  - **CASE** similar to if/then/else, must end with **END**
  
@@ -120,10 +122,10 @@
  
  ```
  SELECT year,month,MAX(high) **AS** month_high
- FROM tutorial.aapl_historical_stock_price
- GROUP BY year, month
- HAVING MAX(high) > 400
- ORDER BY year, month
+        FROM tutorial.aapl_historical_stock_price
+        GROUP BY year, month
+        HAVING MAX(high) > 400
+        ORDER BY year, month
  ```
  
   ex:(pay attention to the "," at the end of **SELECT** line)
