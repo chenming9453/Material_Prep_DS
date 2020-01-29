@@ -33,12 +33,12 @@
 
  # A/B test
  
-- terminology: 
+## terminology: 
  1. individual: unit
  2. experimental variable(independent/treatment variable), target variable(outcome), control variable(predictor), and lurking variable(confounder)
  3. learning effect: people get adaptive to the treatment
 
-- overview:
+## overview:
  1. When not to use A/B test: if the change is too large, if control/test group cannot be decided only by the change. if the testing time is too long(need to observe at least one cycle)/cost is too high/. if something is missing.
  
  2. A/B test gives you broad and quantitative data
@@ -51,13 +51,13 @@
  
  6. matched-pair design: need to choose the test units first, then assign the control units accordingly. so how to choose the test units:identify outliers, # of treatment units, randomly select
  
-- choose metrics
+## choose metrics
 
  7. how to generate metrics: defining customer funnel, external data, UER(user experiment study), focus group, survey(less depth, more people), retrospective analysis, experiments
  
  8. metrics: filtering, segmenting, summary(sums&counts,distribution(retrospective analysis),probablities&rates,ratios) -> sensitivity and robustness: experiment or retrospective , A/A test(sanity check) within A/B test can be used to examine the variability(can also use empirical methods to estimate variance) of metrics
  
- - Design experiment
+ ## Design experiment
  
  9. Diversion: consistency(to what level can the objective notice the difference),ethical(additional information collected might related to identification), variability(unit of analysis and unit of diversion)
  
@@ -67,7 +67,7 @@
  
  12. things keep changing over time, use pre(A/A test)/pro(A/A test)-periods together with cohort to solve learning effect 
  
- - Analyze results
+ ## Analyze results
  
  13. sanity checks: choose invariant metrics(should not differ between treatment & control ) -> check invariants(CI)
  
@@ -151,7 +151,6 @@
   ```
  
  4. 
-
 
 
 
