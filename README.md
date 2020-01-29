@@ -119,33 +119,33 @@
  ex: 
  
  ```
- **SELECT** year,month,MAX(high) **AS** month_high
- **FROM** tutorial.aapl_historical_stock_price
- **GROUP BY** year, month
- **HAVING** MAX(high) > 400
- **ORDER BY** year, month
+ SELECT year,month,MAX(high) **AS** month_high
+ FROM tutorial.aapl_historical_stock_price
+ GROUP BY year, month
+ HAVING MAX(high) > 400
+ ORDER BY year, month
  ```
  
   ex:(pay attention to the "," at the end of **SELECT** line)
   
   ```
-  **SELECT** player_name,year,
-        **CASE WHEN** year = 'SR'  **THEN ** 'yes'
-             **ELSE ** 'no'  **END AS** is_a_senior
-   **FROM** benn.college_football_players
+  SELECT player_name,year,
+        CASE WHEN year = 'SR' THEN 'yes'
+             ELSE 'no'  END AS is_a_senior
+   FROM benn.college_football_players
   ```
    
    ex:(pay attention to the **1** here, **1** actually refer to year_group, so we can use **GROUP BY** year_group. But we cannot use COUNT(year_group), because by that time year_group do not exist)
    
    ```
-   **SELECT CASE WHEN** year = 'FR' **THEN** 'FR'
-            **WHEN** year = 'SO' **THEN** 'SO'
-            **WHEN** year = 'JR' **THEN** 'JR'
-            **WHEN** year = 'SR' **THEN** 'SR'
-            **ELSE** 'No Year Data' **END AS** year_group,
-            **COUNT(1) AS** count
-   **FROM** benn.college_football_players
-   **GROUP BY** 1 
+   SELECT CASE WHEN year = 'FR' THEN 'FR'
+            WHEN year = 'SO' THEN 'SO'
+            WHEN year = 'JR' THEN 'JR'
+            WHEN year = 'SR' THEN 'SR'
+            ELSE 'No Year Data' END AS year_group,
+            COUNT(1) AS count
+   FROM benn.college_football_players
+   GROUP BY 1 
   ```
  
  4. 
